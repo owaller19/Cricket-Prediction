@@ -1,1 +1,4 @@
 Data collected from cricsheet.org, as specified by problem requirements.
+
+T20 zip folder contains the JSON data used directly from cricsheet, approx 7000 matches. 
+Other datasets contain the data at various stages throughout pre processing, see data processsing README
