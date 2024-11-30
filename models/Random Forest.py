@@ -61,15 +61,6 @@ for match_id, group in grouped:
 # Calculate accuracy
 accuracy = correct_predictions / total_matches if total_matches > 0 else 0
 
-# Evaluation metrics for regression
-mse = mean_squared_error(y_test, random_forest_model.predict(X_test))
-rmse = mse ** 0.5
-mae = mean_absolute_error(y_test, random_forest_model.predict(X_test))
-r2 = r2_score(y_test, random_forest_model.predict(X_test))
-
-print(f"Root Mean Squared Error (RMSE): {rmse}")
-print(f"Mean Absolute Error (MAE): {mae}")
-print(f"R^2 Score: {r2}")
 print(f"Total Matches: {total_matches}")
 print(f"Correct Predictions: {correct_predictions}")
 print(f"Accuracy in Predicting Higher Scoring Team: {round(accuracy * 100, 2)}%")
